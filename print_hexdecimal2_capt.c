@@ -29,7 +29,7 @@ int print_hexadecimal2_capt(unsigned long int numb)
 	for (m = counter - 1; m >= 0; m--)
 	{
 		if (array[m] > 9)
-			array[m] = array[m] + 7;
+			array[m] = array[m] + 39;
 		_putchar(array[m] + '0');
 	}
 	free(array);
