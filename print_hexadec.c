@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_hexadec - a function that prints hexadecimal number
+ * print_hexadec - a function that prints hexadecimal number lowercase
  * @vargs: the argument
  *
  * Return: the number
@@ -30,7 +30,7 @@ int print_hexadec(va_list vargs)
 	for (m = counter - 1; m >= 0; m--)
 	{
 		if (array[m] > 9)
-			array[m] = array[m] + 32;
+			array[m] = array[m] + 39;
 		_putchar(array[m] + '0');
 	}
 	free(array);
