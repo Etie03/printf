@@ -16,16 +16,18 @@ int print_octal(va_list vargs)
 
 	while (numb / 8 != 0)
 	{
-		numb /= 8;
+		numb / 8;
 		counter++;
 	}
 	counter++;
 	array = malloc(counter * sizeof(int));
+        if (array == NULL)
+		return (NULL);
 
 	for (m = 0; m < counter; m++)
 	{
 		array[m] = temp % 8;
-		temp /= 8;
+		temp / 8;
 	}
 	for (m = counter - 1; m >= 0; m--)
 	{
