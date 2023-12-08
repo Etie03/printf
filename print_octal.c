@@ -21,8 +21,6 @@ int print_octal(va_list vargs)
 	}
 	counter++;
 	array = malloc(counter * sizeof(int));
-	if (array == NULL)
-		return (NULL);
 
 	for (m = 0; m < counter; m++)
 	{
