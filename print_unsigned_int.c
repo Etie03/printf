@@ -7,7 +7,7 @@
  */
 int print_unsigndint(va_list args)
 {
-	int m = va_arg(args, int);
+	unsigned int m = va_arg(args, unsigned int);
 	int numb, last = m % 10, digit, exp = 1;
 	int  g = 1;
 
