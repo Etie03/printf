@@ -8,14 +8,14 @@
  */
 int print_p(va_list vargs)
 {
-	void *p;
+	void *f;
 	char *stg = "(nil)";
 	long int h;
 	int g;
 	int m;
 
-	p = va_arg(vargs, void*);
-	if (p == NULL)
+	f = va_arg(vargs, void*);
+	if (f == NULL)
 	{
 		for (m = 0; stg[m] != '\0'; m++)
 		{
@@ -24,7 +24,7 @@ int print_p(va_list vargs)
 		return (m);
 	}
 
-	h = (unsigned long int)p;
+	h = (unsigned long int)f;
 	_putchar('0');
 	_putchar('x');
 	g = print_hexadecimal2_capt(h);
